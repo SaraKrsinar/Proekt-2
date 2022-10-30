@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Welcome</title>
+</head>
+
+<body>
+  <fieldset>  
+<h1>Специјалитети на денот:</h1>
+<p><em>ОД ПОНЕДЕЛНИК ДО ПЕТОК
+    <br>11:00 - 15:00
+    <br>СПЕЦИЈАЛНА ПОНУДА ОД 390 денари + ДДВ
+</p>
+    <p>Во понудата е вклучен сендвич по избор, десерт и пијалок.</p></em>
+
+    <fieldset>
+        <legend>Податоци за нарачката</legend>
+        <p style="text-align: justify;  color:black; "><label>Име:
+            <input name = "name" type = "text" size = "30"
+            maxlength = "30" color="black">
+            </label></p><br>
+            <input type="radio" id="here" name="naracka" value="ЗА ТУКА">
+            <label for="here">ЗА ТУКА</label>
+            <br>
+            <input type="radio" id="to go" name="naracka" value="ЗА НОСЕЊЕ">
+            <label for="to go">ЗА НОСЕЊЕ</label>
+            <br>
+            
+    </fieldset>
+
+    <fieldset>
+        <legend>Избор специјалитет</legend>
+            <h3><bold class="bold1">ПОНЕДЕЛНИК</bold></h3>
+                <input type="radio" id="pil" name="sendvic1" value="Пилешки сендвич">
+                <label for="pil">Пилешки сендвич</label>
+                <br>
+                <input type="radio" id="tun" name="sendvic1" value="Туна сендвич">
+                <label for="tun">Туна сендвич</label>
+                <br>
+            <h3><bold class="bold2">ВТОРНИК</bold></h3>
+                <input type="radio" id="c" name="sendvic2" value="Цезар врап">
+                <label for="c">Цезар врап</label>
+                <br>
+                <input type="radio" id="me" name="sendvic2" value="Мексикански врап">
+                <label for="me">Мексикански врап</label>
+                <br>
+            <h3><bold class="bold3">СРЕДА</bold></h3>
+                <input type="radio" id="bu" name="sendvic3" value="Хамбургер">
+                <label for="bu">Хамбургер</label>
+                <br>
+                <input type="radio" id="ci" name="sendvic3" value="Чизбургер">
+                <label for="ci">Чизбургер</label>
+                <br>
+            <h3><bold class="bold4">ЧЕТВРТОК</bold></h3>
+                <input type="radio" id="sv" name="sendvic4" value="Свински врап">
+                <label for="sv">Свински врап</label>
+                <br>
+                <input type="radio" id="tl" name="sendvic4" value="Телешки врап">
+                <label for="tl">Телешки врап</label>
+                <br>
+            <h3><bold class="bold5">ПЕТОК</bold></h3>
+                <input type="radio" id="pc" name="sendvic5" value="Пица сендвич">
+                <label for="pc">Пица сендвич</label>
+                <br>
+                <input type="radio" id="bo" name="sendvic5" value="Болоњезе сендвич">
+                <label for="bo">Болоњезе сендвич</label>
+                <br>
+
+                <hr>
+                <div>
+                    <input type="checkbox" id="leb" name="Леб без глутен (+ 80 денари)" >
+                    <label for="leb">Леб без глутен (+ 80 денари)</label>
+                  </div>
+                
+    </fieldset>
+
+    <fieldset>
+        <legend>Десерти</legend>
+            <h3 class="animate-charcter">Десерти</h3>
+            <br>
+                <input type="radio" id="prv" name="desert" value="Топло-ладно">
+                <label for="prv">Топло-ладно</label>
+                <br>
+                <input type="radio" id="vtor" name="desert" value="Чоко торта">
+                <label for="vtor">Чоко торта</label>
+                <br>
+                <input type="radio" id="tret" name="desert" value="Пита со јаболки">
+                <label for="tret">Пита со јаболки</label>
+                <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Пијалок</legend>
+            <h3 class="animate-charcter">Пијалок</h3>
+            <br>
+                <select name="pijaloci" id="pijalok-select">
+                    <option value="">--Odberete opcija--</option>
+                    <option value="kokakola">Кока кола</option>
+                    <option value="fanta">Фанта</option>
+                    <option value="pepsi">Пепси</option>
+                    <option value="sprite">Спрајт</option>
+                    <option value="mirinda">Миринда</option>
+                    <option value="gazoza">Газоза</option>
+                </select>
+
+            <hr>
+                <div>
+                    <input type="checkbox" id="golemina" name="King size пијалок (+ 80 денари)" >
+                    <label for="golemina">King size пијалок (+ 80 денари)</label>
+                  </div>
+                
+    </fieldset>
+    <br>
+    <input class="submit" type = "submit" value = "Испрати нарачка">
+</body>
+</html>
